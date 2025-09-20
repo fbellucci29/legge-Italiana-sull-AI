@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legge Italiana sull'Intelligenza Artificiale - Struttura</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 300;
+        }
+        
+        .header p {
+            margin: 10px 0 0 0;
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 20px;
+        }
+        
+        .stat {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 0.9em;
+            opacity: 0.8;
+        }
+        
+        .content {
+            padding: 0;
+        }
+        
+        .capi-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 0;
+        }
+        
+        .capo {
+            border-right: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .capo:nth-child(even) {
+            background: #f8f9ff;
+        }
+        
+        .capo-header {
+            background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%);
+            color: white;
+            padding: 20px;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        
+        .capo-content {
+            padding: 20px;
+        }
+        
+        .articolo {
+            margin-bottom: 15px;
+            padding: 12px;
+            background: white;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .articolo:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .articolo-numero {
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 1.1em;
+        }
+        
+        .articolo-titolo {
+            color: #34495e;
+            margin: 5px 0;
+            font-size: 0.95em;
+            line-height: 1.4;
+        }
+        
+        .articolo-descrizione {
+            color: #7f8c8d;
+            font-size: 0.85em;
+            margin-top: 8px;
+            font-style: italic;
+        }
+        
+        .capo1 { border-left-color: #e74c3c; }
+        .capo2 { border-left-color: #f39c12; }
+        .capo3 { border-left-color: #2ecc71; }
+        .capo4 { border-left-color: #9b59b6; }
+        .capo5 { border-left-color: #e67e22; }
+        .capo6 { border-left-color: #1abc9c; }
+        
+        .footer {
+            background: #ecf0f1;
+            padding: 20px;
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 768px) {
+            .capi-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .capo {
+                border-right: none;
+            }
+            
+            .stats {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🇮🇹 Legge Italiana sull'Intelligenza Artificiale</h1>
+            <p>Approvata definitivamente dal Senato il 17 settembre 2025</p>
+            <div class="stats">
+                <div class="stat">
+                    <span class="stat-number">28</span>
+                    <span class="stat-label">Articoli</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">6</span>
+                    <span class="stat-label">Capi</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">1°</span>
+                    <span class="stat-label">In Europa</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="capi-grid">
+                <!-- CAPO I -->
+                <div class="capo">
+                    <div class="capo-header">
+                        CAPO I - PRINCIPI E FINALITÀ
+                    </div>
+                    <div class="capo-content">
+                        <div class="articolo capo1">
+                            <div class="articolo-numero">Art. 1</div>
+                            <div class="articolo-titolo">Finalità e ambito di applicazione</div>
+                            <div class="articolo-descrizione">Principi per uso antropocentrico, trasparente e responsabile dell'IA</div>
+                        </div>
+                        <div class="articolo capo1">
+                            <div class="articolo-numero">Art. 2</div>
+                            <div class="articolo-titolo">Definizioni</div>
+                            <div class="articolo-descrizione">Richiama le definizioni dell'AI Act europeo</div>
+                        </div>
+                        <div class="articolo capo1">
+                            <div class="articolo-numero">Art. 3</div>
+                            <div class="articolo-titolo">Principi generali</div>
+                            <div class="articolo-descrizione">Diritti fondamentali, trasparenza, sicurezza, sorveglianza umana</div>
+                        </div>
+                        <div class="articolo capo1">
+                            <div class="articolo-numero">Art. 4</div>
+                            <div class="articolo-titolo">Principi su informazione e privacy</div>
+                            <div class="articolo-descrizione">Consenso genitoriale per minori di 14 anni, trasparenza dati</div>
+                        </div>
+                        <div class="articolo capo1">
+                            <div class="articolo-numero">Art. 5</div>
+                            <div class="articolo-titolo">Principi per sviluppo economico</div>
+                            <div class="articolo-descrizione">Promozione competitività e sovranità tecnologica</div>
+                        </div>
+                        <div class="articolo capo1">
+                            <div class="articolo-numero">Art. 6</div>
+                            <div class="articolo-titolo">Sicurezza e difesa nazionale</div>
+                            <div class="articolo-descrizione">Esclusioni per attività di sicurezza nazionale e difesa</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- CAPO II -->
+                <div class="capo">
+                    <div class="capo-header">
+                        CAPO II - DISPOSIZIONI DI SETTORE
+                    </div>
+                    <div class="capo-content">
+                        <div class="articolo capo2">
+                            <div class="articolo-numero">Art. 7</div>
+                            <div class="articolo-titolo">IA in ambito sanitario e disabilità</div>
+                            <div class="articolo-descrizione">Supporto a diagnosi e cura, decisione finale al medico</div>
+                        </div>
+                        <div class="articolo capo2">
+                            <div class="articolo-numero">Art. 8</div>
+                            <div class="articolo-titolo">Ricerca scientifica in ambito sanitario</div>
+                            <div class="articolo-descrizione">Disciplina uso dati per ricerca IA, anonimizzazione, dati sintetici</div>
+                        </div>
+                        <div class="articolo capo2">
+                            <div class="articolo-numero">Art. 9</div>
+                            <div class="articolo-titolo">Trattamento dati personali</div>
+                            <div class="articolo-descrizione">Modalità semplificate per ricerca e sperimentazione</div>
+                        </div>
+                        <div class="articolo capo2">
+                            <div class="articolo-numero">Art. 10</div>
+                            <div class="articolo-titolo">Fascicolo sanitario elettronico</div>
+                            <div class="articolo-descrizione">Piattaforma IA per supporto a professionisti e cittadini</div>
+                        </div>
+                        <div class="articolo capo2">
+                            <div class="articolo-numero">Art. 11</div>
+                            <div class="articolo-titolo">IA nel lavoro</div>
+                            <div class="articolo-descrizione">Obbligo informazione lavoratori, tutela dignità</div>
+                        </div>
+                        <div class="articolo capo2">
+                            <div class="articolo-numero">Art. 12</div>
+                            <div class="articolo-titolo">Osservatorio sul lavoro</div>
+                            <div class="articolo-descrizione">Monitoraggio impatto IA nel mondo del lavoro</div>
+                        </div>
+                        <div class="articolo capo2">
+                            <div class="articolo-numero">Art. 13</div>
+                            <div class="articolo-titolo">Professioni intellettuali</div>
+                            <div class="articolo-descrizione">IA solo per attività strumentali, obbligo comunicazione cliente</div>
+                        </div>
+                        <div class="articolo capo2">
+                            <div class="articolo-numero">Art. 14</div>
+                            <div class="articolo-titolo">IA nella pubblica amministrazione</div>
+                            <div class="articolo-descrizione">Funzione strumentale, responsabilità decisionale umana</div>
+                        </div>
+                        <div class="articolo capo2">
+                            <div class="articolo-numero">Art. 15</div>
+                            <div class="articolo-titolo">IA nell'attività giudiziaria</div>
+                            <div class="articolo-descrizione">Ogni decisione legale riservata al magistrato</div>
+                        </div>
+                        <div class="articolo capo2">
+                            <div class="articolo-numero">Art. 16</div>
+                            <div class="articolo-titolo">Delega su dati e algoritmi</div>
+                            <div class="articolo-descrizione">Disciplina organica per addestramento sistemi IA</div>
+                        </div>
+                        <div class="articolo capo2">
+                            <div class="articolo-numero">Art. 17</div>
+                            <div class="articolo-titolo">Modifica codice procedura civile</div>
+                            <div class="articolo-descrizione">Competenza sezioni specializzate per controversie IA</div>
+                        </div>
+                        <div class="articolo capo2">
+                            <div class="articolo-numero">Art. 18</div>
+                            <div class="articolo-titolo">IA per cybersicurezza</div>
+                            <div class="articolo-descrizione">Rafforzamento sicurezza nazionale tramite IA</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- CAPO III -->
+                <div class="capo">
+                    <div class="capo-header">
+                        CAPO III - STRATEGIA NAZIONALE E AUTORITÀ
+                    </div>
+                    <div class="capo-content">
+                        <div class="articolo capo3">
+                            <div class="articolo-numero">Art. 19</div>
+                            <div class="articolo-titolo">Strategia nazionale per l'IA</div>
+                            <div class="articolo-descrizione">Strategia biennale coordinata da Presidenza del Consiglio</div>
+                        </div>
+                        <div class="articolo capo3">
+                            <div class="articolo-numero">Art. 20</div>
+                            <div class="articolo-titolo">Autorità nazionali</div>
+                            <div class="articolo-descrizione">AgID (promozione) e ACN (vigilanza) come autorità competenti</div>
+                        </div>
+                        <div class="articolo capo3">
+                            <div class="articolo-numero">Art. 21</div>
+                            <div class="articolo-titolo">Sperimentazione Ministero Esteri</div>
+                            <div class="articolo-descrizione">300.000 euro annui 2025-2026 per progetti sperimentali</div>
+                        </div>
+                        <div class="articolo capo3">
+                            <div class="articolo-numero">Art. 22</div>
+                            <div class="articolo-titolo">Sostegno giovani e sport</div>
+                            <div class="articolo-descrizione">Formazione e accessibilità IA nello sport</div>
+                        </div>
+                        <div class="articolo capo3">
+                            <div class="articolo-numero">Art. 23</div>
+                            <div class="articolo-titolo">Investimenti IA e cybersicurezza</div>
+                            <div class="articolo-descrizione">1 miliardo euro per PMI e startup via CDP Venture Capital</div>
+                        </div>
+                        <div class="articolo capo3">
+                            <div class="articolo-numero">Art. 24</div>
+                            <div class="articolo-titolo">Deleghe al Governo</div>
+                            <div class="articolo-descrizione">Adeguamento AI Act europeo e disciplina illeciti (12 mesi)</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- CAPO IV -->
+                <div class="capo">
+                    <div class="capo-header">
+                        CAPO IV - DIRITTO D'AUTORE
+                    </div>
+                    <div class="capo-content">
+                        <div class="articolo capo4">
+                            <div class="articolo-numero">Art. 25</div>
+                            <div class="articolo-titolo">Tutela diritto d'autore opere IA</div>
+                            <div class="articolo-descrizione">Protezione solo se derivano da attività intellettuale umana</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- CAPO V -->
+                <div class="capo">
+                    <div class="capo-header">
+                        CAPO V - DISPOSIZIONI PENALI
+                    </div>
+                    <div class="capo-content">
+                        <div class="articolo capo5">
+                            <div class="articolo-numero">Art. 26</div>
+                            <div class="articolo-titolo">Modifiche codice penale</div>
+                            <div class="articolo-descrizione">Aggravante uso illecito IA + reato deepfake (1-5 anni)</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- CAPO VI -->
+                <div class="capo">
+                    <div class="capo-header">
+                        CAPO VI - DISPOSIZIONI FINALI
+                    </div>
+                    <div class="capo-content">
+                        <div class="articolo capo6">
+                            <div class="articolo-numero">Art. 27</div>
+                            <div class="articolo-titolo">Clausola invarianza finanziaria</div>
+                            <div class="articolo-descrizione">Nessun nuovo onere per finanza pubblica (escluso art. 21)</div>
+                        </div>
+                        <div class="articolo capo6">
+                            <div class="articolo-numero">Art. 28</div>
+                            <div class="articolo-titolo">Disposizioni finali</div>
+                            <div class="articolo-descrizione">Coordinamento normativo e disposizioni transitorie</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p><strong>Status:</strong> Approvata definitivamente dal Senato - In attesa di pubblicazione in Gazzetta Ufficiale</p>
+            <p><strong>Entrata in vigore:</strong> 15 giorni dopo pubblicazione in Gazzetta Ufficiale</p>
+            <p><strong>Decreti attuativi:</strong> Da emanare entro 12 mesi dall'entrata in vigore</p>
+        </div>
+    </div>
+</body>
+</html>
